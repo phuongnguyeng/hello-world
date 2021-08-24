@@ -17,13 +17,11 @@ class LineObject : Sprite {
         super.init()
     }
     
-    // var effectSpr = Sprite(imageNamed: "_bat_1_1.png", size: CGSize.withPercentScaled(roundByHeight: 15), position: CGPoint.zero, zPosition: 3)
-    // var animateFrames = [SKTexture()]
+    var effectSpr = Sprite(imageNamed: "_bat_1_1.png", size: CGSize.withPercentScaled(roundByHeight: 15), position: CGPoint.zero, zPosition: 3)
+    var animateFrames = [SKTexture()]
     
     override init(imageNamed: String, size: CGSize, position: CGPoint, zPosition: CGFloat) {
         super.init(imageNamed: imageNamed, size: size, position: position, zPosition: zPosition)
-        
-        /*
         
         effectSpr.size = size
         animateFrames.removeAll()
@@ -37,10 +35,6 @@ class LineObject : Sprite {
         }
         effectSpr.run(SKAction.repeatForever(SKAction.animate(with: animateFrames, timePerFrame: 0.1, resize: false, restore: false)))
         addChild(effectSpr)
-        
-        */
-        
-        print(hello)
     }
     
     required init?(coder aDecoder: NSCoder) {
